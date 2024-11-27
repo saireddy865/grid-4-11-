@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.item{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+h3{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 150px;
+}
+.item1{
+    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+.item2{
+    background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+.item3{
+    background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+.item4{
+    background-image: url("https://www.w3schools.com/w3images/house4.jpg");
+}
+.item5{
+    background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+.item6{
+    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+.item7{
+    background-image: url("https://www.w3schools.com/w3images/house4.jpg");
+}
+.item8{
+    background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+@media screen and  (width >= 600px) and (width <= 800px) {
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (width < 600px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .item{
+        height: 50vh;
+    }
+} 
